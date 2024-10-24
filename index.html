@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Schillerska Discord</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="https://mintfilestorage.blob.core.windows.net/files/user/2787503/logotype_3.png">
+  <meta name="theme-color" content="#1a1d30">
+</head>
+<body>
+  <div id="fadein"></div>
+  <style>
+    /* For best practice, move CSS below to an external CSS file. */
+    @keyframes fadeinall {
+    0% {
+      opacity: 1; }
+    97% {
+      opacity: 0; }
+    98% {
+      opacity: 0;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      z-index: -1; } }
+    #fadein {
+      opacity: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #FFFFFF;
+      z-index: 999;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation: fadeinall 1s normal both;
+      animation: fadeinall 1s normal both;
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+
+      body {
+            background-color: rgb(26, 29, 48); /* Replace with your RGB value */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            /* margin-top: 9px;  Adjust this value for the top margin */
+            max-width: 100%; /* Ensures the image is responsive */
+            height: auto;
+        }
+  </style>
+
+  <img src="https://www.skoogle.nu/wp-content/uploads/2021/10/skoogle-schillerska-box.png" alt="">
+  <iframe src="https://discord.com/widget?id=1298295976456360016&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+  <script type="text/javascript">
+  window.onload = function(){
+    setTimeout(function(){
+      document.getElementById("fadein").remove();
+    },1000);
+  };
+  </script>
+</body>
+</html>
